@@ -12,5 +12,4 @@ var_dump($message);
 var_dump($count);
 var_dump($price);
 
-var_dump($is_admin);
-var_dump($data);
+var_dump($is_admin, $data);
