@@ -1,12 +1,18 @@
 <?php
 
-  $articles = ["First post", "Another post", "Read this!"];
+  // $articles = ["First post", "Another post", "Read this!"];
   // $articles = [1 => "First post", 3 => "Another post", "Read this!"];
   // $articles = [
   //   "first" => "First post",
   //   "second" => "Another post",
   //   "third" => "Read this!"
   // ];
+
+  $articles = [
+    'a' => "First post",
+    'b' => "Another post",
+    'c' => "Read this!"
+  ];
 
   // $values = [
   //   "message" => "Hello world!",
@@ -78,8 +84,12 @@
   // var_dump($articles);
   // echo "Second article's title: " . $articles[1]["title"];
 
-  foreach ($articles as $article) {
-    echo $article, ", ";
+  // foreach ($articles as $article) {
+  //   echo $article, ", ";
+  // }
+
+  foreach ($articles as $index => $article) {
+    echo $index . ' - ' . $article, ", ";
   }
 
 ?>
