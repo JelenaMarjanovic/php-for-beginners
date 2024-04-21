@@ -1,6 +1,6 @@
 <?php
 
-  // $articles = ["First post", "Another post", "Read this!"];
+  $articles = ["First post", "Another post", "Read this!"];
   // $articles = [1 => "First post", 3 => "Another post", "Read this!"];
   // $articles = [
   //   "first" => "First post",
@@ -57,11 +57,11 @@
   //   ]
   // ];
 
-  $articles = [
-    ["title" => "First post", "content" => "This is the first post"],
-    ["title" => "Another post", "content" => "Another posto to read here"],
-    ["title" => "Read this!", "content" => "You must read this article!"]
-  ];
+  // $articles = [
+  //   ["title" => "First post", "content" => "This is the first post"],
+  //   ["title" => "Another post", "content" => "Another posto to read here"],
+  //   ["title" => "Read this!", "content" => "You must read this article!"]
+  // ];
 
   // var_dump($articles);
 
@@ -75,7 +75,11 @@
   // var_dump($people);
   // echo "Alice's email: $alice_mail";
 
-  var_dump($articles);
-  echo "Second article's title: " . $articles[1]["title"];
+  // var_dump($articles);
+  // echo "Second article's title: " . $articles[1]["title"];
+
+  foreach ($articles as $article) {
+    echo $article, ", ";
+  }
 
 ?>
