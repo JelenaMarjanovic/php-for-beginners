@@ -22,15 +22,22 @@
 // var_dump(3 == 4);
 // var_dump(4 == 4);
 
-$age = 21;
+// $age = 21;
 // $age = 18;
 
 // if ($age == 21) {  // 21 - true
 // if ($age != 21) {  // 21 - false
 // if ($age < 21) {  // 18 - true
 // if ($age > 21) {  // 21 - false
-if ($age >= 21) {  // 21 - true
-  echo "Condition is true";
-} else {
-  echo "Condition is false";
+// if ($age >= 21) {  // 21 - true
+//   echo "Condition is true";
+// } else {
+//   echo "Condition is false";
+// }
+
+$month = 1;
+
+while ($month <= 12) {
+  echo $month . ", ";
+  $month = $month + 1;
 }
