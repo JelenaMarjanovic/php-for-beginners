@@ -35,9 +35,30 @@
 //   echo "Condition is false";
 // }
 
-$month = 1;
+// $month = 1;
 
-while ($month <= 12) {
-  echo $month . ", ";
-  $month = $month + 1;
+// while ($month <= 12) {
+//   echo $month . ", ";
+//   $month = $month + 1;
+// }
+
+// for ($i = 1; $i <= 10; $i = $i + 1) {
+// for ($i = 1; $i <= 10; $i += 1) {
+// for ($i = 1; $i <= 10; $i++) {
+//   echo $i . ", ";
+// }
+
+// $hour = 11;
+// $hour = 14;
+// $hour = 20;
+$hour = 23;
+
+if ($hour < 12) { // 11 - true, 14 - false, 20 - false, 23 - false
+  echo "Good morning";
+} elseif ($hour < 18) {  // 11 - false, 14 - true, 20 - false, 23 - false
+  echo "Good afternoon";
+} elseif ($hour < 22) {  // 11 - false, 14 - false, 20 - true, 23 - false
+  echo "Good evening";
+} else {  // 11 - false, 14 - false, 20 - false, 23 - true
+  echo "Good night";
 }
