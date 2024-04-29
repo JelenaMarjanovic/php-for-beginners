@@ -51,14 +51,44 @@
 // $hour = 11;
 // $hour = 14;
 // $hour = 20;
-$hour = 23;
+// $hour = 23;
 
-if ($hour < 12) { // 11 - true, 14 - false, 20 - false, 23 - false
-  echo "Good morning";
-} elseif ($hour < 18) {  // 11 - false, 14 - true, 20 - false, 23 - false
-  echo "Good afternoon";
-} elseif ($hour < 22) {  // 11 - false, 14 - false, 20 - true, 23 - false
-  echo "Good evening";
-} else {  // 11 - false, 14 - false, 20 - false, 23 - true
-  echo "Good night";
+// if ($hour < 12) { // 11 - true, 14 - false, 20 - false, 23 - false
+//   echo "Good morning";
+// } elseif ($hour < 18) {  // 11 - false, 14 - true, 20 - false, 23 - false
+//   echo "Good afternoon";
+// } elseif ($hour < 22) {  // 11 - false, 14 - false, 20 - true, 23 - false
+//   echo "Good evening";
+// } else {  // 11 - false, 14 - false, 20 - false, 23 - true
+//   echo "Good night";
+// }
+
+// $day = "Tue";
+$day = "xxx";
+
+switch ($day) {
+  case "Mon":
+    echo "Monday";
+    break;
+  case "Tue": // "Tue" - matches
+    echo "Tuesday";
+    break;          // exits the switch statement
+  case "Wed":
+    echo "Wednesday";
+    break;
+  case "Thu":
+    echo "Thursday";
+    break;
+  case "Fri":
+    echo "Friday";
+    break;
+  case "Sat":
+    echo "Saturday";
+    break;
+  case "Sun":
+    echo "Sunday";
+    break;
+  default:  // "xxx" - doesn't match any case statement
+    echo "No information available for that day.";
+    break;
 }
